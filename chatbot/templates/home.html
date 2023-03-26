@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+{% if question %}
+	<h3>Question: {{ question }}</h3>
+	<br/>
+{% endif %}
+
+
+
+<div class="card">
+  <div class="card-header">
+    KONTOL Response
+  </div>
+  <div class="card-body">
+    {% if response %}
+    	{{ response }}
+    {% endif %}
+    <br/><br/>
+    
+  </div>
+</div>
+
+<br/><br/>
+
+<form method=POST action="{% url 'home' %}">
+  {% csrf_token %}
+  <div class="mb-3">
+    <input type="text" class="form-control" placeholder="Ask Kontol A Question" name="question">
+    
+  </div>
+  
+  
+  <button type="submit" class="btn btn-danger">Submit</button>
+</form>
+
+{% endblock %}
