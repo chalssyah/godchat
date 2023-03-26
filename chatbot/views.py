@@ -9,7 +9,7 @@ def home(request):
 
         #Do API Stuff
         #Set API Key
-        openai.api_key = "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"
+        openai.api_key = "yor APIKEY"
         # Create OpenAI Instance
         openai.Model.list()
         #Make a Completion
