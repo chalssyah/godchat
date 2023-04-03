@@ -13,7 +13,7 @@ def home(request):
 
 
 
-        #API KEY :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
+        #API KEY :
         #Do API Stuff
         #Set API Key
 
