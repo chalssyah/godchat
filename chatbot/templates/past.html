@@ -2,16 +2,16 @@
 
 
 {% block content %}
-<h1>Past Questions ...</h1>
 
 {% if past %}
-	{% for thing in past %}
+<br/>
+	{% for thing in pages %}
 		<strong>{{ thing.question }}</strong><br/>
 		{{ thing.answer }} <br/>
 		<a href="{% url 'delete_past' thing.id %}" class="btn btn-outline-secondary btn-sm"> Delete</a>
-		<br/><br/>
 
-	<br/><br/>
+
+		<br/><br/>
 
 	{% endfor %}
 

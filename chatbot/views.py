@@ -16,11 +16,9 @@ def home(request):
         #API KEY :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
         #Do API Stuff
         #Set API Key
-<<<<<<< HEAD
-        openai.api_key = "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"
-=======
-        openai.api_key = "yor APIKEY"
->>>>>>> 0588ba91e5f0249277c5745cd01dc8b29894a5ad
+
+        openai.api_key = "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"
+
         # Create OpenAI Instance
         openai.Model.list()
         try:            
