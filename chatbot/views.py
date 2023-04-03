@@ -17,7 +17,7 @@ def home(request):
         #Do API Stuff
         #Set API Key
 
-        openai.api_key = "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"
+        openai.api_key = "yourAPI"
 
         # Create OpenAI Instance
         openai.Model.list()
